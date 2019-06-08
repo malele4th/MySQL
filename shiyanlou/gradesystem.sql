@@ -22,6 +22,7 @@ create table mark
 	mid int not null AUTO_INCREMENT,
 	sid int not null,
 	cid int not null,
+	score int not null,
 	PRIMARY KEY(mid),
 	FOREIGN KEY(sid) REFERENCES student(sid),
 	FOREIGN KEY(cid) REFERENCES course(cid)
